@@ -1,0 +1,429 @@
+
+/* main menu in index */
+/* pading zero and margin zero is initial*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.menu-bar
+{
+background-color: black;
+text-align: center;
+
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+}
+.menu-bar ul li{
+    width: 70px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: greenyellow;
+}
+ .menu-bar ul li :hover {
+
+color: gold;
+}
+
+.active{
+    border: 5px solid white;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    color: gold;
+    padding: 6px;
+
+}
+
+/* sub menu in about us */
+
+.submenu{
+    border: none;
+    display: none;
+    position: fixed;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+.menu-bar ul li:hover .submenu{
+    border: none;
+    display: block;
+    position: absolute;
+    background-color: black;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .submenu ul{
+    border: none;
+    display: block;
+    padding: 10px;
+}
+.menu-bar ul li:hover .submenu ul li{
+    border: none;
+    width: 50px;
+    padding: 10px;
+}
+
+
+
+
+/* slider in the home page */
+
+
+#slider {
+    
+    overflow: hidden;
+
+}
+#slider figure {
+	position: relative;
+    width: 500%;
+    margin:0px;
+    left: 0;
+    animation: 10s slider infinite;
+    
+}
+#slider figure img {
+	width: 20%;
+	float: left;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	30% {
+		left: -100%;
+	}
+	40% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	60% {
+		left: -200%;
+	}
+	70% {
+		left: -300%;
+    }
+    80% {
+		left: -300%;
+	}
+	95% {
+		left: -350%;
+	}
+	100% {
+		left: -400%;
+    }
+  
+}
+
+
+/* welcome to home page */
+#welcome{
+    margin: 10px;
+    color: teal;
+    text-align: center;
+    padding: 20px;
+  border: 10px solid black; 
+  border-top-color: yellowgreen;
+  border-left-color: aqua;  
+  border-right-color: aqua; 
+  border-style: outset;
+}
+
+#intro {
+  margin: 10px;
+  padding: 51px;
+  border: 10px solid yellowgreen; 
+  border-left-color: aqua;  
+  border-right-color: aqua; 
+  border-style: outset;
+}
+
+
+
+
+
+
+/* changing the scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px blue; 
+    border-radius: 5px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:green; 
+    border-radius: 5px;
+  }
+
+
+/* footer */
+  footer {
+    
+    height:300px; 
+    background-color: black;
+    color: white;
+  }
+
+#copy{    
+    position: relative;
+    top: 300px;
+    text-align: center;
+    background-color: black;
+    padding: 30px;
+}
+
+
+#mail{
+      font-size: 150%;
+      color:white;
+}
+#whats{
+    font-size: 150%;
+    color:white;
+}
+#logo_footer{
+    margin-left: 50px;
+    float:left;
+    padding:10px;
+}
+
+.footer_links{
+    margin-left: 50px;
+    float:left;
+    padding:10px;
+   }
+
+.contacts{
+    margin-left: 50px;
+   float: left;   
+    padding:10px;
+    }
+
+.main-menu-links{
+    margin-left: 50px;
+    float: left;   
+    padding:15px; 
+    list-style: none;
+    background-color: darkorange;    
+}
+.main-menu-links  li{
+    
+    
+    padding: 15px;
+}
+
+
+
+
+ 
+
+/* about menus */
+#mision_id{
+background: url("img/12.jpg") no-repeat ;
+height: 650px;
+text-align: center;
+}
+#mision_border{
+    position: relative;
+    top: 50px;
+    display: inline-flex;
+    color: white;
+}
+#vision_id{
+    background: url("img/12.jpg") no-repeat ;
+    height: 650px;
+    text-align: center;
+    color:darkorange;
+    font-size: 20px;
+    }
+#team_border{
+      text-align: center;
+     
+      margin-bottom: 100px;
+      margin-top: 100px;
+      background-color:greenyellow;    
+}
+#founder_name{
+      font-size: 30px;
+      color: midnightblue;
+      font-style: italic;
+}
+
+  /* stock */
+
+  div.gallery {
+    margin: 50px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 4px solid green;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+/* cars stock slides and tables data */
+
+.slider_stock {
+    width: 500px;
+    height: 300px;
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .image-container {
+    width: 1500px;
+    height: 300px;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+  }
+  .slide_stock {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+  }
+  #slide-1:target ~ .image-container {
+    left: 0px;
+  }
+  #slide-2:target ~ .image-container {
+    left: -500px;
+  }
+  #slide-3:target ~ .image-container {
+    left: -1000px;
+  }
+  .buttons {
+    position: relative;
+    top: -20px;
+  }
+  .buttons a {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: darkorange;
+  }
+
+
+
+  #center {
+    display: block;
+    margin-left:150px;
+     
+  }
+
+
+
+  /* inquiries*/
+ 
+  input[type=button],  input[type=text],textarea {
+    background-color: 	midnightblue;
+    color: white;
+    padding: 14px 32px;
+    margin: 4px 2px;
+    font-size: 18px;
+  }
+
+  .send_msg {
+    border:5px solid white;
+    padding: 10px;
+    color: dodgerblue;
+  }
+  
+  .send_msg:hover{
+
+    background: #2196F3;
+    color: white;
+  }
+  
+  #names{
+  font-size : 5px;
+  color:black;
+  
+  }
+  .query_class {
+    padding: 60px;
+    margin: 10px;
+    color:gold;
+    background-color: black;
+  }
+ 
+  #query_para{
+      margin: 20px;
+      text-align: center;
+      font-size: 18px;
+  }
+
+  /* company*/
+
+  #company_{
+    margin: 100px;
+    padding: 20px;
+    border:20px solid ;
+  }
+/* location*/
+#loc_add{
+    margin-left: 300px;
+}
+#map{
+    text-align: center;
+    border:5px solid black;
+    width: 500px;
+    height: 400px;
+    margin-left: 400px;   
+}
+
+/* sitemap */
+
+table{
+  margin-left:300px;
+
+}
+td,th{
+  padding: 5px;
+  border:5px solid blue;
+  border-left: hidden;
+  border-right: hidden;
+  border-top: hidden;
+}
+
+/* image will b hidden when print command is given */
+
